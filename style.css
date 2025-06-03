@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'Rubik Mono One', monospace
+}
+
+
+
+.logo-menu {
+    width: 7rem;
+    height: auto;
+}
+
+.carrossel-midia {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /* ou defina um valor fixo como 400px */
+}
+
+.carrossel-midia img {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+
+
+.titulo-principal {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3rem;
+
+    background: linear-gradient(to right, #074173, #1679ab, #5debd7, #C5FF95);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.subtitulo {
+    font-family: 'Rubik Mono One', sans-serif;
+    /* ou outra fonte estilizada */
+    font-size: 1.5rem;
+    color: rgb(27, 27, 27);
+    margin-bottom: 1rem;
+}
+
+.imagem-moldura {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 200px 200px 0 0;
+    /* arredondado em cima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
