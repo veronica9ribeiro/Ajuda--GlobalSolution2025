@@ -12,16 +12,15 @@ body {
     height: auto;
 }
 
-.carrossel-midia {
+.background {
     position: relative;
     display: inline-block;
     width: 100%;
-    /* ou defina um valor fixo como 400px */
 }
 
-.carrossel-midia img {
+.background img {
     width: 100%;
-    height: 50%;
+    height: 30%;
     display: block;
 }
 
@@ -53,4 +52,11 @@ body {
     border-radius: 200px 200px 0 0;
     /* arredondado em cima */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-gradiente {
+  background: linear-gradient(to right, #074173, #1679ab, #5debd7, #C5FF95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
