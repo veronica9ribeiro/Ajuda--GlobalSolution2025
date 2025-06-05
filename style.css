@@ -55,10 +55,10 @@ body {
 }
 
 .texto-gradiente {
-  background: linear-gradient(to right, #074173, #1679ab, #5debd7, #C5FF95);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
+    background: linear-gradient(to right, #074173, #1679ab, #5debd7, #C5FF95);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 :root {
@@ -105,7 +105,7 @@ body {
     font-weight: 400;
     margin-bottom: 25px;
     line-height: 1.2;
-    background: linear-gradient( var(--light-green));
+    background: linear-gradient(var(--light-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     max-width: 600px;
@@ -129,7 +129,7 @@ body {
     border: none;
     font-size: 1.1rem;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     letter-spacing: 1px;
     display: inline-block;
@@ -139,7 +139,7 @@ body {
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     background-color: white;
 }
 
@@ -189,29 +189,30 @@ body {
         height: 40%;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
     }
-    
+
     .cta-title {
         font-size: 2.2rem;
     }
 }
 
-.solucoes{
+.solucoes {
 
-width: 20px;
+    width: 20px;
 
 }
 
 /* Efeito para todos os itens clicáveis */
 .hover-effect {
     transition: all 0.3s ease;
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
 }
 
 .hover-effect:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     background-color: #f8f9fa !important;
-} 
+}
 
 .hover-effect {
     position: relative;
@@ -245,7 +246,8 @@ width: 20px;
 /* Melhoria para mobile */
 @media (max-width: 768px) {
     .hover-effect:hover {
-        transform: none; /* Remove elevação em mobile */
+        transform: none;
+        /* Remove elevação em mobile */
     }
 }
 
@@ -269,7 +271,7 @@ width: 20px;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 }
 
@@ -286,7 +288,7 @@ width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
 }
 
@@ -301,15 +303,18 @@ width: 20px;
 }
 
 .user-icon {
-    color: #011f4b; /* Cor do ícone */
+    color: #011f4b;
+    /* Cor do ícone */
     transition: all 0.3s ease;
     margin-left: 20px;
-    font-size: 1.5rem; /* Tamanho do ícone */
+    font-size: 1.5rem;
+    /* Tamanho do ícone */
     padding: 0.5rem;
 }
 
 .user-icon:hover {
-    color: #1679ab; /* Cor ao passar o mouse */
+    color: #1679ab;
+    /* Cor ao passar o mouse */
     transform: scale(1.1);
 }
 
@@ -319,5 +324,48 @@ width: 20px;
         margin-left: 0;
         padding: 1rem;
         font-size: 1.8rem;
+    }
+}
+
+.menu-item {
+    position: relative;
+    color: var(--deep-blue) !important;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Efeito hover - usando o light-green da sua paleta */
+.menu-item:hover {
+    color: white !important;
+    background-color: var(--light-green);
+    transform: translateY(-2px);
+}
+
+/* Efeito para o item ativo */
+.nav-link.active {
+    font-weight: bold;
+    background-color: rgba(197, 255, 149, 0.3) !important;
+}
+
+/* Animação suave para o ícone de usuário */
+.user-icon {
+    transition: all 0.3s ease;
+    color: var(--deep-blue);
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+    color: var(--ocean-blue);
+}
+
+/* Melhor espaçamento para mobile */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .menu-item {
+        margin: 5px 0;
+        text-align: center;
     }
 }

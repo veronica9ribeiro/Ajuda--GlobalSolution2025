@@ -1,0 +1,129 @@
+ :root {
+            --deep-blue: #074173;
+            --ocean-blue: #1679ab;
+            --aqua: #5debd7;
+            --light-green: #C5FF95;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(135deg, rgba(7, 65, 115, 0.05) 0%, rgba(22, 121, 171, 0.05) 50%, rgba(93, 235, 215, 0.05) 100%);
+            z-index: -1;
+        }
+        
+        .header {
+            background-color: var(--deep-blue);
+            color: white;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            font-family: 'Rubik Mono One', sans-serif;
+            color: var(--light-green);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .search-box {
+            background-color: var(--ocean-blue);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--deep-blue);
+        }
+        
+        .btn-submit {
+            background-color: var(--ocean-blue);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 10px 25px;
+        }
+        
+        .btn-submit:hover {
+            background-color: var(--deep-blue);
+            color: white;
+        }
+        
+        .whatsapp-box {
+            background-color: #25D366;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .whatsapp-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .file-upload {
+            border: 2px dashed #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .file-upload:hover {
+            border-color: var(--aqua);
+            background-color: rgba(93, 235, 215, 0.1);
+        }
+        
+        .file-upload i {
+            font-size: 2rem;
+            color: var(--ocean-blue);
+            margin-bottom: 10px;
+        }
+        
+        .search-input {
+            border-radius: 50px;
+            padding: 12px 20px;
+            border: 2px solid var(--aqua);
+        }
+        
+        .search-btn {
+            background-color: var(--aqua);
+            color: var(--deep-blue);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            font-weight: bold;
+        }
+        
+        .search-btn:hover {
+            background-color: var(--light-green);
+        }
+        
+        .optional-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+            font-weight: normal;
+            margin-left: 5px;
+        }
