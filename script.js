@@ -70,3 +70,6 @@ document.querySelectorAll('.hover-effect').forEach(item => {
         }, 100);
     });
 });
+
+ 
+ new window.VLibras.Widget('https://vlibras.gov.br/app');

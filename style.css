@@ -105,7 +105,7 @@ body {
     font-weight: 400;
     margin-bottom: 25px;
     line-height: 1.2;
-    background: linear-gradient(to right, white, var(--light-green));
+    background: linear-gradient( var(--light-green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     max-width: 600px;
@@ -213,9 +213,111 @@ width: 20px;
     background-color: #f8f9fa !important;
 } 
 
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.hover-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(22, 121, 171, 0.2), transparent);
+    transition: all 0.5s;
+}
+
+.hover-effect:hover {
+    background-color: var(--ocean-blue) !important;
+}
+
+.hover-effect:hover::before {
+    left: 100%;
+}
+
+.hover-effect:hover strong {
+    color: white !important;
+}
+
 /* Melhoria para mobile */
 @media (max-width: 768px) {
     .hover-effect:hover {
         transform: none; /* Remove elevação em mobile */
+    }
+}
+
+.fixed-icons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.whatsapp-icon {
+    background: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    background: #128C7E;
+}
+
+.ai-icon {
+    background: linear-gradient(135deg, #6e48aa, #9d50bb);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.ai-icon img {
+    width: 70%;
+    height: auto;
+}
+
+.ai-icon:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #9d50bb, #6e48aa);
+}
+
+.user-icon {
+    color: #011f4b; /* Cor do ícone */
+    transition: all 0.3s ease;
+    margin-left: 20px;
+    font-size: 1.5rem; /* Tamanho do ícone */
+    padding: 0.5rem;
+}
+
+.user-icon:hover {
+    color: #1679ab; /* Cor ao passar o mouse */
+    transform: scale(1.1);
+}
+
+/* Ajuste para mobile */
+@media (max-width: 992px) {
+    .user-icon {
+        margin-left: 0;
+        padding: 1rem;
+        font-size: 1.8rem;
     }
 }
