@@ -75,8 +75,8 @@ body {
 .cta-section {
     background-color: var(--deep-blue);
     color: white;
-    padding: 0px 0;
-    margin: 40px 0;
+    padding: 10px 0;
+    margin: 40px ;
     border-radius: 12px;
     position: relative;
     overflow: hidden;
